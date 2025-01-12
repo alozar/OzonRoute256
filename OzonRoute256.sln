@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzonRoute256", "OzonRoute256\OzonRoute256.csproj", "{B8E5D0EF-33AB-4FD0-972C-262D167D934D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzonRoute256.Tests", "OzonRoute256.Tests\OzonRoute256.Tests.csproj", "{02E6674E-8805-45A9-916C-57CFC5DC51D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{066DFA98-9934-499A-9A5F-C91637D2B1A6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8E5D0EF-33AB-4FD0-972C-262D167D934D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E5D0EF-33AB-4FD0-972C-262D167D934D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E5D0EF-33AB-4FD0-972C-262D167D934D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E5D0EF-33AB-4FD0-972C-262D167D934D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E6674E-8805-45A9-916C-57CFC5DC51D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E6674E-8805-45A9-916C-57CFC5DC51D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E6674E-8805-45A9-916C-57CFC5DC51D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E6674E-8805-45A9-916C-57CFC5DC51D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
