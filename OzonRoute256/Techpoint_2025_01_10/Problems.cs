@@ -40,8 +40,67 @@ public class Problems
     /// <summary>
     /// 2. Валидация ответа
     /// </summary>
-    public static void ValidateOutput()
+    public static string[] ValidateOutput(int[] n, string[] data, string[] verifiableData)
     {
+        string[] results = new string[n.Length];
+        string[] splitedData;
+        string[] spletedVerifiableData;
+        int[] intData;
+        int[] intVerifiableData;
+        int count = -1;
+
+        while (true)
+        {
+            CountLoopStart: count++;
+            if (count == n.Length)
+            {
+                break;
+            }
+
+            if (data[count].Length != verifiableData[count].Length)
+            {
+                results[count] = "no";
+                continue;
+            }
+
+            splitedData = data[count].Split();
+            spletedVerifiableData = verifiableData[count].Split();
+
+            if (spletedVerifiableData.Length != n[count])
+            {
+                results[count] = "no";
+                continue;
+            }
+
+            intData = new int[n[count]];
+            intVerifiableData = new int[n[count]];
+            for (int i = 0; i < n[count]; i++)
+            {
+                intData[i] = int.Parse(splitedData[i]);
+                if (int.TryParse(spletedVerifiableData[i], out int number))
+                {
+                    intVerifiableData[i] = number;
+                    continue;
+                }
+                results[count] = "no";
+                goto CountLoopStart;
+            }
+
+            Array.Sort(intData);
+
+            for (int i = 0; i < n[count]; i++)
+            {
+                if (intData[i] != intVerifiableData[i])
+                {
+                    results[count] = "no";
+                    goto CountLoopStart;
+                }
+            }
+
+            results[count] = "yes";
+        }
+
+        return results;
     }
 
     /// <summary>
