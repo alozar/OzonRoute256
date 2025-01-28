@@ -56,7 +56,8 @@ hello
 2
 1 2
 2 1
-
+```
+```plaintext
 Выходные данные
 yes
 no
